@@ -35,8 +35,14 @@ public class Tests {
 
         // test update
         GroupAdmin g= new GroupAdmin();
+        logger.info(()-> test.java.JvmUtilities.objectTotalSize(g));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(g));
         g.register(m1);
         g.register(m2);
+        logger.info(()-> test.java.JvmUtilities.objectTotalSize(g));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(g));
+
+
         UndoableStringBuilder t = new UndoableStringBuilder();
         t.append("to be or not to be");
         g.getUSB().append(t.toString());
@@ -47,27 +53,28 @@ public class Tests {
         assertNotEquals(m2.getUSB().toString(),null);
         assertEquals(m1.getUSB().toString(),t.toString());
         assertEquals(m2.getUSB().toString(),t.toString());
-       // assertEquals(m1.getUSB().toString(),m2.getUSB().toString());
+        assertEquals(m1.getUSB().toString(),m2.getUSB().toString()); // check that all members has the same usb value
         // # CHECK JVM MEMEORY for groupAdmin
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(g)); // check size of groupAdmin in memory
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(g));
         //check size of members after update
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(m1));
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(m2));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(m1));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(m2));
 
         g.getUSB().reverse();
         g.modify();
-
-      //  assertNotEquals(m1.getUSB(),t); // reverse vs. to be or not to be
         assertEquals( g.getUSB().toString(),t.reverse().toString());
         assertEquals(m1.getUSB().toString(),t.toString());
         assertEquals(m2.getUSB().toString(),t.toString());
         System.out.println(m1.getUSB().toString());
         System.out.println(m2.getUSB().toString());
-        //assertNotEquals();
+
         g.getUSB().delete(0,100);
         g.modify();
-        assertNotEquals(m1.getUSB(), t); // nothing vs. to be or not to be
-        assertNotEquals(m2.getUSB(),t);
+        assertNotEquals(m1.getUSB().toString(), t.toString()); // nothing vs. to be or not to be
+        assertNotEquals(m2.getUSB().toString(),t.toString());
 //        assertEquals(m2.getUSB(),"");
         g.getUSB().undo();
         g.modify();
@@ -75,8 +82,11 @@ public class Tests {
         assertEquals(m2.getUSB().toString(),t.toString());
         // # JVM CHECK FOR ALL CHANGES
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(g));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(g));
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(m1));
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(m2));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(m1));
+        logger.info(()-> test.java.JvmUtilities.objectFootprint(m2));
     }
 
 
@@ -103,29 +113,12 @@ public class Tests {
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(g1));
         logger.info(()-> test.java.JvmUtilities.objectTotalSize(g1.getMembers()));
 
-        //
 
-    }
-
-    @Test
-    public void test(){
-//        String s1 = "Alice";
-//        String s2 = "Bob";
-//        UndoableStringBuilder getUSB()=new UndoableStringBuilder("hello darkness my old friend");
-//
-//
-//        logger.info(()-> JvmUtilities.objectFootprint(getUSB()));
-//
-//        logger.info(()->JvmUtilities.objectFootprint(usb));
-//
-//        logger.info(()->JvmUtilities.objectTotalSize(usb));
-//
-//        logger.info(() -> JvmUtilities.jvmInfo());
     }
 
 
     /**
-       the following tests belong to the usb test class.
+       the following tests belong to the usb test class from the previous assignment.
      */
    @Test
    public void AppendMethodTest() {
