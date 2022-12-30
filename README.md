@@ -3,8 +3,8 @@ Written by:
 1. Michal Elisha
 2. Shlomit Ashkenazi
 
-In this Matala we extended the abilities of UndoableStringBuilder (which we have built in the previous Matala):
-  1. At the first part we implemented the Observer design as we learned in calss
+In this assignment, we extended the abilities and applications of UndoableStringBuilder (which we have built in the previous assignment):
+  1. At the first part we implemented the Observer design as we learned in class
   2. At the second part we debuged and analysed our program using JVM
 
 # Getting Started
@@ -42,15 +42,31 @@ Run Tests: ###michal add here guid and screenshoots##
 when you get in the Tests.java class
 
 
+
 # Part 1 - Extend UndoableStringBuilder with Observable Design
 we have created a UML to explain how we implemented this part:
 
 ![image](https://user-images.githubusercontent.com/42152443/210070552-c0ca8429-d950-4b72-ac26-9b3ea0d4c20e.png)
 
-1. as you can see the 'observer' == 'Member' an interface that's being implemented by ConcreteMember (and therefor the 'update' method is implemented at ConcreteMember - even if we didn't state it explicitly).
+1. as you can see the 'observer' == 'Member' an interface that's being implemented by ConcreteMember (and therefore the 'update' method is implemented at ConcreteMember - although we didn't state it explicitly in the UML).
 2. by this analogy, 'observable' == 'Sender' an interface that's being  implemented by GroupAdmin (also here all methods mentioned at 'Sender' are actually being implemented at 'GroupAdmin').
 
 # Part 2 - Testing using JVM
 ###michal add all types off tests##
+![footprint_initialize](https://user-images.githubusercontent.com/91603335/210086382-f1cf4b40-6292-41ef-9ba5-c9ad44367b32.png)
+
+
+
+
+![footprint_member](https://user-images.githubusercontent.com/91603335/210086393-bed18c5c-4936-417f-bd56-a1de0d6c3e13.png)
+
+
+
+
+
+
+
+
+#################3
 
 in order to use the JVM capabilities, we used Logger as Natan (the teacher) explained to us at his SHEUT KABALA (Link - https://ariel-ac-il.zoom.us/rec/play/DISm8hWeT72rigLJrvBO7qyvMXBhaZOoXEMBSOLd4jmxMoqpF1srWUnfS-MlHVGOznSDSOlv7aA9E44C.8yjo9No50jJwHQWW?continueMode=true&_x_zm_rtaid=2FfKobIHSwW9RPlxRtmiCA.1671577797488.a88248ea7530a8531db2fdeeb2f51028&_x_zm_rhtaid=569 )
