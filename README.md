@@ -38,7 +38,7 @@ DEBUG - https://www.jetbrains.com/help/idea/debugging-your-first-java-applicatio
 RUN - https://www.jetbrains.com/help/idea/running-applications.html
 COMPILE - https://www.jetbrains.com/help/idea/compiling-applications.html
 
-Run Tests: ###michal add here guid and screenshoots##
+## Run Tests: ###michal add here guid and screenshoots##
 when you get in the Tests.java class, if you are interested to see the "behind the scences" of a test function , click on the left or the first row of the method and press "debug".
 in this example, we debugged the concreteMemberTest() method:
 
