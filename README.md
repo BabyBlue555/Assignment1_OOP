@@ -47,7 +47,8 @@ in this example, we debugged the concreteMemberTest() method:
   
 * initialization of g - object  of type groupAdmin 
 
-  ![groupAdmin initialize in test](https://user-images.githubusercontent.com/91603335/210090059-9e8da7d9-d14c-4e57-89fa-e65420f1e617.png)
+ ![initialize groupAdmin'](https://user-images.githubusercontent.com/91603335/210091835-ee62c05c-fe7b-40bc-aaff-ca06ab40aba9.png)
+
     
 * groupAdmin after registration on the first concrete member
   
