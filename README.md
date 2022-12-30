@@ -32,7 +32,7 @@ In this assignment, we extended the abilities and applications of UndoableString
 ![image](https://user-images.githubusercontent.com/42152443/210076424-dc937216-9967-415a-a94e-8969e0137b3a.png)
 
 6. then finally the extraction will end:
-7. 
+
 ![image](https://user-images.githubusercontent.com/42152443/210076519-417a21fa-73b7-4ee6-a65e-346514906ef3.png)
 
 you can see the project now. (should look like this):
