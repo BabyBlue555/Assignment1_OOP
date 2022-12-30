@@ -39,8 +39,25 @@ RUN - https://www.jetbrains.com/help/idea/running-applications.html
 COMPILE - https://www.jetbrains.com/help/idea/compiling-applications.html
 
 Run Tests: ###michal add here guid and screenshoots##
-when you get in the Tests.java class
+when you get in the Tests.java class, if you are interested to see the "behind the scences" of a test function , click on the left or the first row of the method and press "debug".
+in this example, we debugged the concreteMemberTest() method:
 
+
+* initialization of two concrete members
+  i![initialize members](https://user-images.githubusercontent.com/91603335/210090936-9ee81b00-bc19-4564-b75b-ab18d1a488bc.png)
+  
+* initialization of g - object  of type groupAdmin 
+
+  ![groupAdmin initialize in test](https://user-images.githubusercontent.com/91603335/210090059-9e8da7d9-d14c-4e57-89fa-e65420f1e617.png)
+    
+* groupAdmin after registration on the first concrete member
+  
+  ![groupAdmin after registration of one member](https://user-images.githubusercontent.com/91603335/210090745-7c28612f-3f21-46ee-a401-6305635c14c2.png)
+
+
+* assert the modify() and update() functions - checking the value of usb of the members
+  
+  ![checking the value of usb of memebers](https://user-images.githubusercontent.com/91603335/210090478-a2bff75b-6fe2-4e63-b422-3565fc32b7b4.png)
 
 
 # Part 1 - Extend UndoableStringBuilder with Observable Design
@@ -73,13 +90,9 @@ the Footprint method on the concrete members after the update (modify() method i
 the Footprint method on the groupAdmin class after the update (modify() method in groupAdmin )  shows us the following data:
 
 ![info_totalsize_foot_groupAdmin](https://user-images.githubusercontent.com/91603335/210087291-26d4e821-3942-4b63-b752-97858952e371.png)
+
 we can see that the list now contains the members, and so the memory allocated for the list and for groupAdmin has increased
 
 
-
-
-
-
-#################3
-
+*note:
 in order to use the JVM capabilities, we used Logger as Natan (the teacher) explained to us at his SHEUT KABALA (Link - https://ariel-ac-il.zoom.us/rec/play/DISm8hWeT72rigLJrvBO7qyvMXBhaZOoXEMBSOLd4jmxMoqpF1srWUnfS-MlHVGOznSDSOlv7aA9E44C.8yjo9No50jJwHQWW?continueMode=true&_x_zm_rtaid=2FfKobIHSwW9RPlxRtmiCA.1671577797488.a88248ea7530a8531db2fdeeb2f51028&_x_zm_rhtaid=569 )
