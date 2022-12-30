@@ -38,10 +38,9 @@ DEBUG - https://www.jetbrains.com/help/idea/debugging-your-first-java-applicatio
 RUN - https://www.jetbrains.com/help/idea/running-applications.html
 COMPILE - https://www.jetbrains.com/help/idea/compiling-applications.html
 
-## Run Tests: ###michal add here guid and screenshoots##
-when you get in the Tests.java class, if you are interested to see the "behind the scences" of a test function , click on the left or the first row of the method and press "debug".
+### Run and Debug Tests:
+when you get in the Tests.java class, if you are interested to see the "behind the scences" of a test function , click on the left of the first row of the method and press "debug".
 in this example, we debugged the concreteMemberTest() method:
-
 
 * initialization of two concrete members
   i![initialize members](https://user-images.githubusercontent.com/91603335/210090936-9ee81b00-bc19-4564-b75b-ab18d1a488bc.png)
@@ -58,6 +57,10 @@ in this example, we debugged the concreteMemberTest() method:
 * assert the modify() and update() functions - checking the value of usb of the members
   
   ![checking the value of usb of memebers](https://user-images.githubusercontent.com/91603335/210090478-a2bff75b-6fe2-4e63-b422-3565fc32b7b4.png)
+  
+* assert  the modify() and update() functions and also the undo() function from UndoableStringBuilder class:
+ 
+  ![list of members after undo() and modify](https://user-images.githubusercontent.com/91603335/210091602-90a70ce5-ab0a-4ae2-b053-8047f4c40c9a.png)
 
 
 # Part 1 - Extend UndoableStringBuilder with Observable Design
@@ -69,7 +72,7 @@ we have created a UML to explain how we implemented this part:
 2. by this analogy, 'observable' == 'Sender' an interface that's being  implemented by GroupAdmin (also here all methods mentioned at 'Sender' are actually being implemented at 'GroupAdmin').
 
 # Part 2 - Testing using JVM
-###michal add all types off tests##
+
 the goal of JVM is to show us how much memory the data structures we use takes, so we can track it and try to optimize the code's efficiency.
 
 the totalsize method on initialized concrete  members and the groupAdmin class  before the registration shows us the following data:
