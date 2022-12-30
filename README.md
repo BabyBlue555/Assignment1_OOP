@@ -14,10 +14,15 @@ In this assignment, we extended the abilities and applications of UndoableString
 2.extract it localy
 3.open IntelliJ
 3.on the top right press File->new->project from existing sources:
+
 ![image](https://user-images.githubusercontent.com/42152443/210076094-10179040-735f-4af5-b15b-28d1fcc26a4c.png)
+
 4.nevigate to the path to our project folder:
+
 ![image](https://user-images.githubusercontent.com/42152443/210076190-91b23a11-7518-4eb5-83f3-46af2ae0122f.png)
+
 5. press Next on the following:
+
 ![image](https://user-images.githubusercontent.com/42152443/210076270-66c83781-2034-40ef-a999-8efd742b617b.png)
 ![image](https://user-images.githubusercontent.com/42152443/210076284-9f50497e-68f2-4864-aef5-104d4bb8169c.png)
 ![image](https://user-images.githubusercontent.com/42152443/210076306-5451d701-95f5-41c0-8df4-233328095f9a.png)
@@ -25,10 +30,13 @@ In this assignment, we extended the abilities and applications of UndoableString
 ![image](https://user-images.githubusercontent.com/42152443/210076372-97673730-f2e4-418d-960f-6a2a0661ed21.png)
 ![image](https://user-images.githubusercontent.com/42152443/210076405-567b3f5f-d1af-47fc-a646-7cd2025672ea.png)
 ![image](https://user-images.githubusercontent.com/42152443/210076424-dc937216-9967-415a-a94e-8969e0137b3a.png)
+
 6. then finally the extraction will end:
+7. 
 ![image](https://user-images.githubusercontent.com/42152443/210076519-417a21fa-73b7-4ee6-a65e-346514906ef3.png)
 
 you can see the project now. (should look like this):
+
 ![image](https://user-images.githubusercontent.com/42152443/210077082-9681d7d0-1090-44ca-8f82-cae61d609669.png)
 
 
@@ -47,8 +55,7 @@ in this example, we debugged the concreteMemberTest() method:
   
 * initialization of g - object  of type groupAdmin 
 
- ![initialize groupAdmin'](https://user-images.githubusercontent.com/91603335/210091835-ee62c05c-fe7b-40bc-aaff-ca06ab40aba9.png)
-
+  ![initialize groupAdmin'](https://user-images.githubusercontent.com/91603335/210091974-f8977392-5555-4458-9553-1ebc4c072991.png)
     
 * groupAdmin after registration on the first concrete member
   
