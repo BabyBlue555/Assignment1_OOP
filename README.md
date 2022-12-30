@@ -53,14 +53,28 @@ we have created a UML to explain how we implemented this part:
 
 # Part 2 - Testing using JVM
 ###michal add all types off tests##
+the goal of JVM is to show us how much memory the data structures we use takes, so we can track it and try to optimize the code's efficiency.
+
+the totalsize method on initialized concrete  members and the groupAdmin  before the registration shows us the following data:
+
+![info_totalsize_member](https://user-images.githubusercontent.com/91603335/210088015-4b9f4a3f-8e1c-4f5c-afc0-d4c0a505d2b0.png)
+
+
+the Footprint method on the initialized concrete  members that has registered to groupAdmin shows us the following data:
+
 ![footprint_initialize](https://user-images.githubusercontent.com/91603335/210086382-f1cf4b40-6292-41ef-9ba5-c9ad44367b32.png)
 
 
 
+the Footprint method on the concrete members after the update (modify() method in groupAdmin )  shows us the following data:
 
 ![footprint_member](https://user-images.githubusercontent.com/91603335/210086393-bed18c5c-4936-417f-bd56-a1de0d6c3e13.png)
 
 
+the Footprint method on the groupAdmin class after the update (modify() method in groupAdmin )  shows us the following data:
+
+![info_totalsize_foot_groupAdmin](https://user-images.githubusercontent.com/91603335/210087291-26d4e821-3942-4b63-b752-97858952e371.png)
+we can see that the list now contains the members, and so the memory allocated for the list and for groupAdmin has increased
 
 
 
