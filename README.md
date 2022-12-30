@@ -10,23 +10,14 @@ In this assignment, we extended the abilities and applications of UndoableString
 # Getting Started
 *Rerquirements - IntelliJ enviorment*
 
-t config merge.tool vimdiff
-git config merge.conflictstyle diff3
-git config mergetool.prompt fals1.Download our project as ZIP file
+1.Download our project as ZIP file
 2.extract it localy
 3.open IntelliJ
 3.on the top right press File->new->project from existing sources:
 
 ![image](https://user-images.githubusercontent.com/42152443/210076094-10179040-735f-4af5-b15b-28d1fcc26a4c.png)
 
-4!
-
-
-
-
-
-
-.nevigate to the path to our project folder:
+4.nevigate to the path to our project folder:
 
 ![image](https://user-images.githubusercontent.com/42152443/210076190-91b23a11-7518-4eb5-83f3-46af2ae0122f.png)
 
