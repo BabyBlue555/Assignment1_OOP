@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+# Assignment1_OOP
+
+explanation on the classes:
+
+1. GroupAdmin - the observerable.  implements Sender
+2. concreteMember - the observer. Implements Member
+3. UndoableStringBuilder - is used in both of the classes as a source of situations - we update each member according to the usb , and each member has the same usb value , since each member gets a shallow copy of the usb
+||||||| 24f41f7
+# Assignment1_OOP
+=======
 # Assignment1_OOP
 Written by:
 1. Michal Elisha
@@ -10,14 +21,23 @@ In this assignment, we extended the abilities and applications of UndoableString
 # Getting Started
 *Rerquirements - IntelliJ enviorment*
 
-1.Download our project as ZIP file
+t config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt fals1.Download our project as ZIP file
 2.extract it localy
 3.open IntelliJ
 3.on the top right press File->new->project from existing sources:
 
 ![image](https://user-images.githubusercontent.com/42152443/210076094-10179040-735f-4af5-b15b-28d1fcc26a4c.png)
 
-4.nevigate to the path to our project folder:
+4!
+
+
+
+
+
+
+.nevigate to the path to our project folder:
 
 ![image](https://user-images.githubusercontent.com/42152443/210076190-91b23a11-7518-4eb5-83f3-46af2ae0122f.png)
 
@@ -107,3 +127,4 @@ we can see that the list now contains the members, and so the memory allocated f
 
 *note:
 in order to use the JVM capabilities, we used Logger as Natan (the teacher) explained to us at his SHEUT KABALA (Link - https://ariel-ac-il.zoom.us/rec/play/DISm8hWeT72rigLJrvBO7qyvMXBhaZOoXEMBSOLd4jmxMoqpF1srWUnfS-MlHVGOznSDSOlv7aA9E44C.8yjo9No50jJwHQWW?continueMode=true&_x_zm_rtaid=2FfKobIHSwW9RPlxRtmiCA.1671577797488.a88248ea7530a8531db2fdeeb2f51028&_x_zm_rhtaid=569 )
+>>>>>>> main
