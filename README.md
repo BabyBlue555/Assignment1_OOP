@@ -55,15 +55,14 @@ we have created a UML to explain how we implemented this part:
 ###michal add all types off tests##
 the goal of JVM is to show us how much memory the data structures we use takes, so we can track it and try to optimize the code's efficiency.
 
-the totalsize method on initialized concrete  members and the groupAdmin  before the registration shows us the following data:
+the totalsize method on initialized concrete  members and the groupAdmin class  before the registration shows us the following data:
 
-![info_totalsize_member](https://user-images.githubusercontent.com/91603335/210088015-4b9f4a3f-8e1c-4f5c-afc0-d4c0a505d2b0.png)
+![info_totalsize_initialize](https://user-images.githubusercontent.com/91603335/210088729-68bd7158-70a9-4e07-a3ea-00830fa65c85.png)
 
 
-the Footprint method on the initialized concrete  members that has registered to groupAdmin shows us the following data:
+the Footprint method on the groupAdmin class  before the registration shows us the following data:
 
-![footprint_initialize](https://user-images.githubusercontent.com/91603335/210086382-f1cf4b40-6292-41ef-9ba5-c9ad44367b32.png)
-
+![footprint_groupAdmin_pre](https://user-images.githubusercontent.com/91603335/210088849-44413b1f-d1c7-435b-ad04-84cef6c10a3f.png)
 
 
 the Footprint method on the concrete members after the update (modify() method in groupAdmin )  shows us the following data:
